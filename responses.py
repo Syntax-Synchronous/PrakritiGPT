@@ -66,14 +66,12 @@ Osteoarthritis: A 2013 randomized controlled trial of 440 people with knee osteo
 These are some examples of the potential benefits of Ayurveda for certain health issues. However, more rigorous and larger-scale studies are needed to confirm the effectiveness and safety of Ayurveda for various conditions. It is important to consult with your doctor before using any Ayurvedic products or therapies, as they may interact with other medications or cause adverse effects. You should also seek qualified and reputable Ayurvedic practitioners who have adequate training and experience in this field.', ['how', 'is', 'ayurveda', 'effective', 'beneficial', 'benefits'], required_words=['effective'])
 
     best_match = max(highest_probability_list, key=highest_probability_list.get)
-    print(highest_probability_list)
     
     return best_match
 
 def get_response(message: str) -> str:
     p_message = re.split(r'\s+|[,;?!.-]\s*', message.lower())
     response = check_messages(p_message)
-    print(len(response))
     return response
 
 
