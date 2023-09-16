@@ -30,6 +30,9 @@ vectorizer = CountVectorizer(min_df=1)
 vectorizer.fit(X_train.values)
 bot_name = "Sam"
 
+def get_prakriti():
+    pass
+
 def get_response(msg):
     # print(intents)
     # msg_list= []
@@ -44,8 +47,8 @@ def get_response(msg):
             ans = random.choice(intent["responses"])
             return(f"{bot_name}: {ans} " )
     
-while(True):
-    msg = input("You: ")
-    if(msg == 'quit'):
-        break
-    print(get_response(msg))
+# while(True):
+#     msg = input("You: ")
+#     if(msg == 'quit'):
+#         break
+#     print(get_response(msg))
