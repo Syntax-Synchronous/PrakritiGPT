@@ -2,6 +2,8 @@ from joblib import load
 from sklearn.feature_extraction.text import CountVectorizer
 import json
 import random
+import json
+import random
 import numpy as np
 import pandas as pd
 nl_model = load('./nlm')
@@ -16,39 +18,20 @@ intentList = {
     5: 'prakriti'
 }
 
-with open('intents.json', 'r') as f:
-    intents = json.load(f)
-
 df = pd.read_csv("./sentences_intent.csv",names = ['Sentences', 'target'])
 X_train=df.Sentences
 
 def get_intent(msg_count):
-    ans = np.argmax(nl_model.predict(msg_count,verbose = 0))
+    ans = np.argmax(nl_model.predict(msg_count))
     return intentList.get(ans)
 
 vectorizer = CountVectorizer(min_df=1)
 vectorizer.fit(X_train.values)
-bot_name = "Sam"
-
-def get_prakriti():
-    pass
 
 def get_response(msg):
-    # print(intents)
-    # msg_list= []
-    # msg_list.append(msg)
+    msg_list= []
+    msg_list.append(msg)
+    msg_count = vectorizer.transform(msg_list)
+    print(get_intent(msg_count))
     
-    msg_count = vectorizer.transform([msg])
-    tag = get_intent(msg_count)
-    for intent in intents["intent"]:
-        if tag == 'prakriti':
-            pass
-        if tag == intent['tag']:
-            ans = random.choice(intent["responses"])
-            return(f"{bot_name}: {ans} " )
-    
-# while(True):
-#     msg = input("You: ")
-#     if(msg == 'quit'):
-#         break
-#     print(get_response(msg))
+get_response("thank you")
