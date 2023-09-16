@@ -6,7 +6,7 @@ import json
 import random
 import numpy as np
 import pandas as pd
-nl_model = load('./nlm')
+nl_model = load('./models/nlm')
 
 with open('intents.json', 'r') as f:
     intents = json.load(f)
@@ -21,7 +21,7 @@ intentList = {
     5: 'prakriti'
 }
 
-df = pd.read_csv("./sentences_intent.csv",names = ['Sentences', 'target'])
+df = pd.read_csv("./datasets/sentences_intent.csv",names = ['Sentences', 'target'])
 X_train=df.Sentences
 
 def get_intent(msg_count):

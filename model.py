@@ -58,5 +58,5 @@ model.compile(
 model.fit(X_train, y_train, epochs=100)
 
 from joblib import dump 
-dump(model, './nlm')
+dump(model, './models/nlm')
 
