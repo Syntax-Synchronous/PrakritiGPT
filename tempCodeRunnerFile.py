@@ -1,0 +1,1 @@
+print(get_intent)

@@ -1,21 +1,84 @@
-import torch
-import torch.nn as nn
 
-class NeuralNet(nn.Module):
-    def __init__(self, input_size, hidden_size, num_classes):
-        super(NeuralNet, self).__init__()
-        self.l1 = nn.Linear(input_size, hidden_size)
-        self.l2 = nn.Linear(hidden_size, hidden_size)
-        self.l3 = nn.Linear(hidden_size, num_classes)
-        self.relu = nn.ReLU()
+## Importing Packages
 
-    def forward(self, x):
-        out = self.l1(x)
-        out = self.relu(out)
-        out = self.l2(out)
-        out = self.relu(out)
-        out = self.l3(out)
+import pandas as pd
+import json
+import tensorflow 
+from tensorflow import keras
+from sklearn.feature_extraction.text import CountVectorizer
+from joblib import dump
+import numpy as np
 
-        return out
+with open('./intents.json', 'r') as f:
+    intents=json.load(f)
+intents = intents['intent']
+
+tags=[]
+xy=[]
+for intent in intents:
+    tag = intent['tag']
+    tags.append(tag)
+    for pattern in intent['patterns']:
+        w = pattern
+        xy.append((w,tag))
+df = pd.DataFrame(xy)
+df.rename(columns = {0:"Sentence", 1:"Target"}, inplace = True)
+named_y = df['Target']
+
+from sklearn.preprocessing import LabelEncoder
+lb = LabelEncoder()
+df['Target'] = lb.fit_transform(df['Target'])
+
+X_train = df.Sentence
+y_train = df.Target
+labels = {}
+for i in range(30):
+    labels[y_train[i]] = named_y[i]
+
+vec = CountVectorizer(min_df=1)
+X_train_count = vec.fit_transform(X_train.values)
+
+df_bow = pd.DataFrame(X_train_count.toarray(), columns=vec.get_feature_names_out())
+
+
+X_train = df_bow
+X_train = X_train.to_numpy()
+
+model = keras.Sequential([
+    keras.layers.Dense(1000, input_shape=(44,),activation='relu',),
+    keras.layers.Dense(100,activation='relu',),
+    keras.layers.Dense(7,activation='sigmoid',)
+])
+
+model.compile(
+    optimizer='adam',
+    loss='sparse_categorical_crossentropy',
+    metrics=['accuracy']
+)
+model.fit(X_train, y_train, epochs=100)
+
+sentence_count = vec.transform(["how are you doing?"])
+
+model.predict(sentence_count)
+
+intentList = {
+    2: 'greeting',
+    1: 'goodbye',
+    6: 'thanks',
+    0: 'about',
+    4: 'name',
+    3: 'help',
+    5: 'prakriti'
+}
+
+def get_intent(msg_count):
+    ans = np.argmax(model.predict(msg_count))
+    return intentList.get(ans)
+
+def get_response(msg):
+    msg_list= []
+    msg_list.append(msg)
+    msg_count = vec.transform(msg_list)
+    print(get_intent(msg_count))
     
 
