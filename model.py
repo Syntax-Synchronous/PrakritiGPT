@@ -59,26 +59,3 @@ model.fit(X_train, y_train, epochs=100)
 
 sentence_count = vec.transform(["how are you doing?"])
 
-model.predict(sentence_count)
-
-intentList = {
-    2: 'greeting',
-    1: 'goodbye',
-    6: 'thanks',
-    0: 'about',
-    4: 'name',
-    3: 'help',
-    5: 'prakriti'
-}
-
-def get_intent(msg_count):
-    ans = np.argmax(model.predict(msg_count))
-    return intentList.get(ans)
-
-def get_response(msg):
-    msg_list= []
-    msg_list.append(msg)
-    msg_count = vec.transform(msg_list)
-    print(get_intent(msg_count))
-    
-
