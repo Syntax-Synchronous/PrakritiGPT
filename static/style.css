@@ -3,7 +3,9 @@
     margin: 0;
     padding: 0;
 }
-
+html {
+    background-image: url('./images/nature.png');
+}
 body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
@@ -32,8 +34,8 @@ body {
     display: flex;
     flex-direction: column;
     background: #eee;
-    width: 300px;
-    height: 350px;
+    width: 750px;
+    height: 600px;
     z-index: -123456;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -98,8 +100,8 @@ body {
 
 .chatbox__support {
     background: #f9f9f9;
-    height: 450px;
-    width: 350px;
+    height: 650px;
+    width: 500px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
