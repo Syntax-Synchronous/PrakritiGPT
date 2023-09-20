@@ -1,1 +1,43 @@
 # PrakritiGPT
+
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
+![flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Jinja](https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black)
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
+ 
+
+
+## Idea/Approach
+The objective is to predict the Prakriti of the user based on a few pre-determined questions.
+
+• We can achieve that by using pre-existing data and training a machine learning model to predict the ‘Prakriti’ of the user.
+ 
+• This has been implemented into a chatbot that runs on NLP-like model made by using Deep Learning, specifically a feed-forward neural network made by using the Tensorflow module.
+
+• The chatbot is then hosted on a webpage using a ‘jinja2’ template using the flask module in Python.
+
+• A Discord bot has also been made for brief information pertaining to the Prakriti assessment using an async ready API wrapper for discord written in Python.
+
+## Technology Stack:
+
+• Frontend: HTML, CSS, JavaScript
+
+• Backend: Python, flask
+
+### The project  uses the following:
+
+Pandas, numpy, json, tensorflow, sklearn and flask modules in Python.
+
+Discord module in Python for the discord bot.
+
+HTML CSS and JavaScript for the frontend
+
