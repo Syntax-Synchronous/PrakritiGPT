@@ -21,7 +21,7 @@
 <a><img align = "center" src = "https://i.imgur.com/PaWZz57.png" width = "100px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/7GPUqCc.png" width = "125px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/k4LbDzR.png" width = "125px"></a>
-<a><img align = "center" src = "https://i.imgur.com/iKcvwvP.png" width = "125px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/iKcvwvP.png" width = "100px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/jWHCkJI.png" width = "125px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/VLo6GiH.png" width = "50px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/NP2hRFA.png" width = "50px"></a> 
