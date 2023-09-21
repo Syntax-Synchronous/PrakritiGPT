@@ -13,7 +13,22 @@
 ![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)
- 
+
+<a><img align = "center" src = "https://i.imgur.com/bMKArwr.png" width = "50px"></a>
+<a><img align = "center" src = "https://i.imgur.com/s6vIe8A.png" width = "50px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/unCOJTK.png" width = "125px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/2kw9P4e.png" width = "50px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/PaWZz57.png" width = "100px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/7GPUqCc.png" width = "125px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/k4LbDzR.png" width = "125px"></a>
+<a><img align = "center" src = "https://i.imgur.com/iKcvwvP.png" width = "125px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/jWHCkJI.png" width = "125px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/VLo6GiH.png" width = "50px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/NP2hRFA.png" width = "50px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/dq2JVwT.png" width = "50px"></a>
+<a><img align = "center" src = "https://i.imgur.com/mulsWoC.png" width = "50px"></a> 
+
+
 
 
 ## Idea/Approach
