@@ -26,12 +26,13 @@
 <a><img align = "center" src = "https://i.imgur.com/VLo6GiH.png" width = "50px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/NP2hRFA.png" width = "50px"></a> 
 <a><img align = "center" src = "https://i.imgur.com/dq2JVwT.png" width = "50px"></a>
-<a><img align = "center" src = "https://i.imgur.com/mulsWoC.png" width = "50px"></a> 
+<a><img align = "center" src = "https://i.imgur.com/mulsWoC.png" width = "50px"></a>
+<a>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>
 
 
 
 
-## Idea/Approach
+# Idea/Approach
 The objective is to predict the Prakriti of the user based on a few pre-determined questions.
 
 • We can achieve that by using pre-existing data and training a machine learning model to predict the ‘Prakriti’ of the user.
@@ -42,7 +43,7 @@ The objective is to predict the Prakriti of the user based on a few pre-determin
 
 • A Discord bot has also been made for brief information pertaining to the Prakriti assessment using an async ready API wrapper for discord written in Python.
 
-## Technology Stack:
+# Technology Stack:
 
 • Frontend: HTML, CSS, JavaScript
 
@@ -56,3 +57,8 @@ Discord module in Python for the discord bot.
 
 HTML CSS and JavaScript for the frontend
 
+# Credits
+
+prakriti-analysis/ml/mlml.py at main · [puter-nyaani-Soma/prakriti-analysis](https://github.com/puter-nyaani-Soma/prakriti-analysis)
+
+prakriti-analysis/ml/deeplearning.ipynb at main · [puter-nyaani-Soma/prakriti-analysis](https://github.com/puter-nyaani-Soma/prakriti-analysis)
