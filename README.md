@@ -72,24 +72,24 @@ Team Lead - Ritesh Das:
 
 Ankan Das:
 
-• developed the backend of the chatbot model
+• Developed the backend of the chatbot model
 
 Arka Nandi:
 
-• developed the frontend of the chatbot model
+• Developed the frontend of the chatbot model
 
 Saptarshi Nath:
 
-• assisted Ritesh Das in making the discord bot
+• Assisted Ritesh Das in making the discord bot
 
 Aishwaryya Bhattacharyya:
 
-• made the powerpoint presentation
-• gathered questionnaire for chatbot model/ discord bot
-• assisted Ankan Das in making changes in intents.json file
+• Made the powerpoint presentation
+• Gathered questionnaire for chatbot model/ discord bot
+• Assisted Ankan Das in making changes in intents.json file
 
 Nirban Das:
 
-• collected data sets for chatbot model
+• Collected data sets for chatbot model
 
 
