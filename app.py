@@ -1,5 +1,5 @@
-from flask import Flask, render_template, request, jsonify
-from get_intent import get_response
+from flask import Flask, url_for,redirect,render_template, request, jsonify
+from get_intent import get_response, get_intent
 
 app = Flask(__name__)
 
@@ -13,6 +13,8 @@ def predict():
     response = get_response(text)
     message = {"answer":response}
     return jsonify(message)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)

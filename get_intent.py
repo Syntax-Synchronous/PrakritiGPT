@@ -34,8 +34,8 @@ intentList = {
     5: 'prakriti'
 }
 
-df = pd.read_csv("./datasets/sentences_intent.csv",names = ['Sentences', 'target'])
-X_train=df.Sentences
+df = pd.read_csv("./datasets/sentences_intent.csv")
+X_train=df.Sentence
 
 def get_intent(msg_count):
     ans = np.argmax(nl_model.predict(msg_count,verbose = 0))
@@ -43,9 +43,10 @@ def get_intent(msg_count):
 
 vectorizer = CountVectorizer(min_df=1)
 vectorizer.fit(X_train.values)
+print(len(X_train.values))
 
 questions={
-    0:"<p>What is the appearance of hair?</p><p>1. Dry,Black, knotted, brittle</p><p>2. Straight, oily</p><p>3. Thick, curly</p>",
+    0:"<p><strong>What is the appearance of hair?</strong></p><p>1. Dry,Black, knotted, brittle</p><p>2. Straight, oily</p><p>3. Thick, curly</p>",
     # 0:'What is your body size? <br> Slim<br>Medium<br>Large',
     1:'<p><strong>What is your body weight?</strong><br /> 1. Low- difficulties in gaining weight<br /> 2.Moderate- no difficulties in gaining or losing weight<br /> 3.Heavy- difficulties in losing weight</p>',
     2:'<p><strong>What is your height?</strong><br /> 1.Short<br /> 2.Average<br /> 3.Tall</p>',
@@ -97,8 +98,9 @@ def get_response(msg):
             flag = False
             praki = get_ans([lis])
             ans = f'<p><strong>Your Prakriti is:</strong></p> {praki}'
+            
         i = i + 1
-        print(lis, limit,i)
+        print(lis, limit,i,flag)
         return ans
     msg_list= []
     msg_list.append(msg)
