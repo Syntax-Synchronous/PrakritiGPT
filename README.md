@@ -62,3 +62,34 @@ HTML CSS and JavaScript for the frontend
 prakriti-analysis/ml/mlml.py at main · [puter-nyaani-Soma/prakriti-analysis](https://github.com/puter-nyaani-Soma/prakriti-analysis)
 
 prakriti-analysis/ml/deeplearning.ipynb at main · [puter-nyaani-Soma/prakriti-analysis](https://github.com/puter-nyaani-Soma/prakriti-analysis)
+
+# Contribution
+
+Team Lead - Ritesh Das: 
+
+• Developed the discord bot
+• Edited README.md
+
+Ankan Das:
+
+• Developed the backend of the chatbot model
+
+Arka Nandi:
+
+• Developed the frontend of the chatbot model
+
+Saptarshi Nath:
+
+• Assisted Ritesh Das in making the discord bot
+
+Aishwaryya Bhattacharyya:
+
+• Made the powerpoint presentation
+• Gathered questionnaire for chatbot model/ discord bot
+• Assisted Ankan Das in making changes in intents.json file
+
+Nirban Das:
+
+• Collected data sets for chatbot model
+
+
