@@ -29,6 +29,7 @@ named_y = df['Target']
 
 from sklearn.preprocessing import LabelEncoder
 lb = LabelEncoder()
+print(df['Target'])
 df['Target'] = lb.fit_transform(df['Target'])
 
 df.set_index('Sentence')

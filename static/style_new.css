@@ -164,9 +164,12 @@ body {
 }
 
 .chatbox__support {
+    position: absolute;
     background: #f9f9f9;
-    height: 600px;
-    width: 500px;
+    height: 500px;
+    width: 400px;
+    left: -398px;
+    top: -603px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
 }
@@ -254,10 +257,13 @@ body {
 .chatbox__button button,
 .chatbox__button button:focus,
 .chatbox__button button:visited {
+    position: absolute;
     padding: 10px;
     background: white;
     border: none;
     outline: none;
+    left: -66px;
+    top: -128px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -309,4 +315,29 @@ body{
 } 
 .accordion.active .accordion__answer {
     display: block;
+}
+
+
+.real_footer{
+    background-color: rgba(255,255,255,.4) ;
+    width: 100%;
+    position:absolute; 
+    display: block;
+    left:0px;
+    bottom:0px;
+}
+
+.anc {
+color: black;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: 0.5s ease-in-out 0.2s;
+}
+
+.anc:hover {
+    color: #0a3097;
+}
+
+#sp {
+    position: absolute;
+    text-decoration: none;
 }
